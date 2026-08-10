@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>免費桌布下載</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    background: #111111;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", sans-serif;
+  }
+
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 20px 32px;
+  }
+
+  .image-frame {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .image-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    -webkit-touch-callout: default; /* 允許長按選單 */
+    user-select: none;
+  }
+
+  .hint {
+    margin-top: 20px;
+    color: #f2f2f2;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 320px;
+  }
+
+  .hint strong {
+    color: #ffffff;
+  }
+
+  .hint-icon {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+
+  .fallback {
+    margin-top: 14px;
+    font-size: 12.5px;
+    color: #999999;
+    text-align: center;
+  }
+
+  .fallback a {
+    color: #cfcfcf;
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="image-frame">
+      <!-- 請將 wallpaper.jpg 換成妳自己的桌布檔名,建議手機直式尺寸,例如 1170x2532 (iPhone) 或 1080x2340 (Android) -->
+      <img src="wallpaper.jpg" alt="活動限定桌布" id="wallpaperImg">
+    </div>
+
+    <div class="hint">
+      <span class="hint-icon">👆</span>
+      <strong>長按圖片,選擇「儲存圖片」</strong><br>
+      即可存到手機相簿
+    </div>
+
+    <div class="fallback">
+      若長按無反應,<a href="wallpaper.jpg" download>點此下載</a>
+    </div>
+  </div>
+
+</body>
+</html>
